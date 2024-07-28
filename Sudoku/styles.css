@@ -1,71 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
-body {
-    background-color: #f6cce5;
+body{
+   background-color: #333333;
+   color:white
 }
-
-#container {
-  text-align: center;
+h1{
+    margin-top: 0%;
+    text-align: CENTER;
+    font-family: CURSIVE;
+    font-size: XXX-LARGE;
 }
-
-.padd {
-    font-size: 5.6rem;
-    font-family: 'Water Brush', cursive;
+.box{
+    height: 156px;
+    width: 156px;
+    border: solid white 2px;
+    background-color: #333333;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
-
-table {
-  border-collapse: collapse;
-  font-size: 2em;
-  margin: 0 auto;
-}
-
-colgroup,
-tbody {
-  border: solid medium;
-}
-
-td {
-  border: solid thin;
-  height: 1.4em;
-  width: 1.4em;
-  text-align: center;
-  padding: 0;
-}
-
-.btns{
+#main{
+    height: 480px;
+    width: 480px;
+    border: solid white 4px;
     display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+    margin-top: -1%;
+}
+.cell{
+    height: 50px;
+    width: 50px;
+    border: solid white 1px;
     text-align: center;
-    justify-content: center;
+    background-color: #333333;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+input{
+    height: 45px;
+    width: 44px;
+    border: none;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #333333;
+    color: white;
+}
+button{
+    height: 70px;
+    width: 200px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: red;
+    border: solid 4px black;
+    border-radius: 30px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+}
+#start{
+    top: 26%;
+    left: 5%;
+}
+#replay{
+    top: 45%;
+    left: 5%;
+}
+#answer{
+    top: 65%;
+    left: 5%;
 }
 
-button {
-  margin-top: 15px;
-  font-size: 1.5em;
-  background-color: #A288E3;
-  color: white;
-  margin-left: 5px;
-  border: #A288E3;
-  border-radius: 5px;
-  padding: 5px 10px;
+#game_type{
+    position: absolute;
+    top: 24%;
+    left: 75%;
+    
 }
 
-button:hover{
-    color: #A288E3;
-    background-color: white;
-    outline: #A288E3;
-    transition: all 1s ease;
+.label{
+    height: 15px;
+    width: 15px;
     cursor: pointer;
 }
 
-@media screen and (max-width: 460px) {
-    .padd {
-        font-size: 4.2rem;
-    }
-
-    table {
-      font-size: 1.5em;
-    }
-
-    button{
-        font-size: 1rem;
-    }
+#help{
+    left: 0%;
+    top: 150%;
 }
+#lives{
+    position: absolute;
+    top: 13%;
+    left: 72%;
+    color: orangered;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#timer{
+    top: 10%;
+    position: absolute;
+    left: 3%;
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    
+}
+
